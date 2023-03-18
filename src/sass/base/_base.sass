@@ -1,0 +1,21 @@
+*
+    box-sizing: border-box
+
+html
+    font-size: 62.5%
+    background-color: $white
+
+body
+    overflow-x: hidden
+
+.container
+    max-width: 111rem
+    margin: 0 auto
+    @include respond(tab-land)
+        max-width: 96rem
+    @include respond(tab-port)
+        max-width: 72rem
+    @include respond(phone-land)
+        max-width: 54rem
+    @include respond(phone-port)
+        max-width: 90%
